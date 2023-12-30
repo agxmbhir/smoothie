@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./adaptation/Cargo.toml",
+        "./adaptation/Cargo.toml"
+    ],
+    "rust-analyzer.showUnlinkedFileNotification": false
+}
