@@ -1,5 +1,6 @@
 // Implementation of the nodes used in the search tree.
 // Important for modularity and reusability accross different problems.
+use rand::Rng;
 
 // Implements the copy trait
 #[derive(Copy, Clone)]
