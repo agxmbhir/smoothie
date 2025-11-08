@@ -17,7 +17,7 @@ pub struct Action {
     probability: f32,
 }
 
-trait Node {
+pub trait Node {
     fn new(state: State) -> Self;
 
     // Means all the children have been visited.

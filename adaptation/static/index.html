@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie - MCTS UI Adaptation</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍹 Smoothie</h1>
+            <p class="subtitle">Monte Carlo Tree Search for UI Adaptation</p>
+        </header>
+
+        <main>
+            <section class="control-panel">
+                <h2>Control Panel</h2>
+                <div class="form-group">
+                    <label for="iterations">Number of Iterations:</label>
+                    <input type="number" id="iterations" value="100" min="1" max="10000">
+                </div>
+                <div class="form-group">
+                    <label for="moveLimit">Move Limit:</label>
+                    <input type="number" id="moveLimit" value="10" min="1" max="100">
+                </div>
+                <button id="runSimulation" class="btn-primary">Run Simulation</button>
+                <button id="resetSimulation" class="btn-secondary">Reset</button>
+            </section>
+
+            <section class="results-panel">
+                <h2>Simulation Results</h2>
+                <div id="status" class="status-message">Ready to start simulation</div>
+                <div id="results" class="results-content">
+                    <p class="placeholder">Run a simulation to see results here...</p>
+                </div>
+            </section>
+
+            <section class="info-panel">
+                <h2>About</h2>
+                <p>This is a Monte Carlo Tree Search (MCTS) implementation for UI adaptation. The algorithm explores different UI states and optimizes for the best user experience.</p>
+                <h3>How it works:</h3>
+                <ul>
+                    <li><strong>Selection:</strong> Traverse the tree to find the most promising node</li>
+                    <li><strong>Expansion:</strong> Add new child nodes to explore</li>
+                    <li><strong>Simulation:</strong> Run random playouts from the new node</li>
+                    <li><strong>Backpropagation:</strong> Update values back up the tree</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Smoothie MCTS - Built with Rust & Actix-web</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
